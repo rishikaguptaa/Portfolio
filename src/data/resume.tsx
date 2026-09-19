@@ -4,6 +4,15 @@ import { HomeIcon } from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { Python } from "@/components/ui/svgs/python";
 import { Docker } from "@/components/ui/svgs/docker";
+import type { ReactNode } from "react";
+
+type ContentLink = {
+  href: string;
+  title: string;
+  icon?: ReactNode;
+};
+
+const noLinks: ContentLink[] = [];
 
 const Java = skillIcon("/icons/java.png", "Java");
 const JavaScript = skillIcon("/icons/javascript.png", "JavaScript");
@@ -144,7 +153,7 @@ export const DATA = {
         "Bootstrap 5",
         "GitHub Actions",
       ],
-      links: [],
+      links: noLinks,
       image: "",
       video: "",
     },
@@ -162,7 +171,7 @@ export const DATA = {
         "Aptos",
         "TypeScript",
       ],
-      links: [],
+      links: noLinks,
       image: "",
       video: "",
     },
@@ -174,7 +183,7 @@ export const DATA = {
       description:
         "Developed an NLP/ML solution that converts unstructured address data into ISO 20022-compliant fields using regex, geocoding APIs, and validation for international address standardization.",
       technologies: ["React", "JavaScript", "SQL", "Machine Learning", "NLP"],
-      links: [],
+      links: noLinks,
       image: "",
       video: "",
     },
@@ -188,7 +197,7 @@ export const DATA = {
         "Winner for best implementation and use case of the Gemini API at Electrothon 7.0, organized by NIT Hamirpur and Major League Hacking. Awarded a $350 cash prize.",
       image: "/icons/gemini.png",
       win: "Best Gemini API Use Case",
-      links: [],
+      links: noLinks,
     },
     {
       title: "Hack-o-thon 2025",
@@ -198,7 +207,7 @@ export const DATA = {
         "Received the Achiever's Award for academic excellence and winning Hack-o-thon 2025.",
       image: "/chandigarh-university.png",
       win: "Achiever's Award",
-      links: [],
+      links: noLinks,
     },
     {
       title: "ServiceNow Certified System Administrator",
@@ -207,7 +216,7 @@ export const DATA = {
       description:
         "Certified System Administrator (CSA) certified through the ServiceNow Learning Portal.",
       image: "/icons/servicenow.png",
-      links: [],
+      links: noLinks,
     },
   ],
 } as const;

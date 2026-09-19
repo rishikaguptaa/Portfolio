@@ -1,7 +1,7 @@
 import { skillIcon } from "@/components/skill-icon";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { Typescript } from "@/components/ui/svgs/typescript";
-import type { ComponentType, HTMLAttributes } from "react";
+import type { ComponentType } from "react";
 
 const JavaScript = skillIcon("/icons/javascript.png", "JavaScript");
 const DotNet = skillIcon("/icons/dotnet.png", "ASP.NET Core");
@@ -15,7 +15,7 @@ const Postman = skillIcon("/icons/postman.png", "Postman");
 const TensorFlow = skillIcon("/icons/tensorflow.png", "TensorFlow");
 const AgenticAi = skillIcon("/icons/agentic-ai.png", "NLP");
 
-type TechIcon = ComponentType<HTMLAttributes<HTMLElement>>;
+type TechIcon = ComponentType<{ className?: string }>;
 
 const MATCHERS: { test: (name: string) => boolean; icon: TechIcon }[] = [
   { test: (n) => n.includes("asp.net") || n.includes(".net"), icon: DotNet },
