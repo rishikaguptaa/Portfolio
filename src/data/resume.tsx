@@ -190,6 +190,15 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "ServiceNow Certified System Administrator",
+      dates: "2026",
+      location: "ServiceNow Learning Portal",
+      description:
+        "Certified System Administrator (CSA) certified through the ServiceNow Learning Portal.",
+      image: "/icons/servicenow.png",
+      links: noLinks,
+    },
+    {
       title: "Electrothon 7.0 — MLH",
       dates: "2025",
       location: "NIT Hamirpur",
@@ -207,15 +216,6 @@ export const DATA = {
         "Received the Achiever's Award for academic excellence and winning Hack-o-thon 2025.",
       image: "/chandigarh-university.png",
       win: "Achiever's Award",
-      links: noLinks,
-    },
-    {
-      title: "ServiceNow Certified System Administrator",
-      dates: "2025",
-      location: "ServiceNow Learning Portal",
-      description:
-        "Certified System Administrator (CSA) certified through the ServiceNow Learning Portal.",
-      image: "/icons/servicenow.png",
       links: noLinks,
     },
   ],

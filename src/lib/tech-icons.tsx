@@ -14,6 +14,8 @@ const GitHub = skillIcon("/icons/github.png", "GitHub");
 const Postman = skillIcon("/icons/postman.png", "Postman");
 const TensorFlow = skillIcon("/icons/tensorflow.png", "TensorFlow");
 const AgenticAi = skillIcon("/icons/agentic-ai.png", "NLP");
+const MetaMask = skillIcon("/icons/metamask.png", "MetaMask");
+const Aptos = skillIcon("/icons/aptos.jpg", "Aptos");
 
 type TechIcon = ComponentType<{ className?: string }>;
 
@@ -25,6 +27,8 @@ const MATCHERS: { test: (name: string) => boolean; icon: TechIcon }[] = [
   { test: (n) => n.includes("bootstrap"), icon: Bootstrap },
   { test: (n) => n.includes("github"), icon: GitHub },
   { test: (n) => n.includes("gemini"), icon: Gemini },
+  { test: (n) => n.includes("metamask"), icon: MetaMask },
+  { test: (n) => n.includes("aptos"), icon: Aptos },
   { test: (n) => n.includes("typescript"), icon: Typescript },
   { test: (n) => n.includes("javascript"), icon: JavaScript },
   { test: (n) => n.includes("react"), icon: ReactLight },
